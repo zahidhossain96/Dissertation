@@ -1,0 +1,247 @@
+
+
+body { /* the body method */
+  background: white;/* #C7C1C1 makes background grey */
+  /*text-align: left; /* Alignes all text to the left */
+  /* Padding and Margin are being reset below. This was done so that the browser padding and margin is reset to 0 to make it all equal.  */
+  padding: 0;
+  margin:0;
+  font-family: "merriweather";
+  font-size: 14pt;
+}
+
+#bar{
+  width: 100%;
+  /*height: 50%;*/
+  background-color: white;
+  padding: 20px;
+  padding-bottom: 2px;
+  padding-left: 20px; /* adds the spacing on the left of the Flags H1. */
+  margin-top: -37px;
+  border-bottom: 1px solid black;
+  position: relative;
+  position: fixed;
+  -webkit-box-shadow: 10px 10px 25px 0px rgba(66,65,66,0.62);
+  -moz-box-shadow: 10px 10px 25px 0px rgba(66,65,66,0.62);
+  box-shadow: 10px 10px 25px 0px rgba(66,65,66,0.62);
+
+}
+
+#nav{ /* This is used to give some style and positioning to the overall navigation bar */
+text-align: left; /*Align text to the left  */
+list-style:none;  /* Deletes the list-like look. */
+font-weight:bold; /*make text bold  */
+position: relative; /*positions the bar  */
+width:100%;  /*take full width  */
+/*Top and Right are used to place the navigation bar in a specific place  */
+top: 2px;
+right: -120px;
+z-index: 1; /*priorities over image  */
+}
+
+
+#nav li{ /* Sets up the list element */
+
+float:left; /* floats the list items to the left  */
+
+position:relative; /* positions the elements relative to each other.  */
+
+
+}
+
+#profile{
+  /*float: right;*/
+  /*margin-left: 00px;*/
+  margin-top: 29px;
+  font-family: "Vladimir Script";
+  margin-left: 45px;
+  text-transform: capitalize;
+  /*margin-left:-170px;*/
+}
+
+#profile ul{
+background:white; /* Background of ul */
+font-family: "Merriweather";
+/*width: 700px;*/
+font-size: 12pt;
+list-style: none;
+position: absolute;
+left: -9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+border: 1px solid black;
+border-radius: 5px;
+-webkit-box-shadow: 10px 10px 25px 0px rgba(66,65,66,0.27);
+-moz-box-shadow: 10px 10px 25px 0px rgba(66,65,66,0.27);
+box-shadow: 10px 10px 25px 0px rgba(66,65,66,0.27);
+width: 105px;
+}
+
+#profile ul li{
+   /* padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+  float: none;
+	right: 37px;
+	list-style: none;
+  border-bottom: 1px solid #cccccc;
+  width: auto;
+
+
+}
+#profile ul a{
+    white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+#profile:hover ul{ /* Displays the dropdown when you hover over the elements.*/
+    left:0; /* Bring back on-screen when needed */
+}
+
+#profile li:hover ul a{ /* There is a global style for links before they are hovered. This code will take those effect off.*/
+    text-decoration:none;
+}
+
+#logo{
+  float: left;
+  padding: 0px;
+}
+
+
+#placeholder{
+  width: 20px;
+  margin-left: 30px;
+  margin-top: 29px;
+  margin-right: -25px;
+  padding-right: 15px;
+  /*margin-left: 620px;*/
+}
+
+#placeholder:hover{
+  cursor: pointer;
+}
+
+#notification{
+  margin-left: 300px;
+  margin-top: 18px;
+}
+
+#noti{
+  height: 30px;
+  width: auto;
+
+}
+
+#profile a:hover{
+color: #0099FF; /* Text colour when hovered */
+
+}
+
+
+#comment{
+  color: black;
+  height: auto;
+  width: 70%;
+  margin-left: 20px;
+
+}
+#feed{
+  margin-left: 100px;
+  margin-top: -10px;
+}
+h1{
+  margin-left: 150px;
+  margin-top: 25px;
+  font-family: "Vladimir Script";
+  text-shadow: 3px 3px 2px rgba(150, 150, 150, 1);
+}
+p{
+  font-family: "merriweather";
+  font-size: 12pt;
+  margin: 10px;
+}
+
+
+
+
+a{
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+
+
+
+.comment{
+  display: none;
+}
+
+
+
+input[type=submit]{
+  margin-left: -65px;
+}
+
+#content{
+  background-color: white;
+  max-width: 960px; /* max width is 960 as specified in the specification */
+  min-width: 450px;  /*  min width is 450 as specified in the specification */
+  height: auto;  /* height is set automatic so that it gets the right size for the content to fit in.  */
+  margin: 25px auto; /* margin is used to centre content in the page. */
+  margin-top: 95px;
+  border: 2px solid white;
+  -webkit-box-shadow: 10px 10px 34px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 34px 5px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 34px 5px rgba(0,0,0,0.75);
+  border-radius: 35px;
+  padding-left: 85px;
+  padding-bottom: 35px;
+  padding-top: 35px;
+}
+
+.content2{
+  background-color: white;
+  /*height: auto;  /* height is set automatic so that it gets the right size for the content to fit in.  */*/
+  /*margin: 5px; /* margin is used to centre content in the page. */
+  margin-top: 165px;
+  border: 2px solid black;
+  padding-left: 20px;
+  margin-left: -75px;
+  border-radius: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+
+}
+
+.content3{
+  background-color: white;
+  /*height: auto;  /* height is set automatic so that it gets the right size for the content to fit in.  */*/
+  /*margin: 5px; /* margin is used to centre content in the page. */
+  margin-top: 300px;
+  border: 2px solid black;
+  padding-left: 420px;
+  margin-left: -75px;
+  border-radius: 15px;
+  padding-bottom: 15px;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+#shareplanlogo{
+  height: 30px;
+  width: 100%;
+  margin-top: -20px;
+
+}
+
+#logoimg{
+  height:57px;
+  width: auto;
+}
+
+
+
+h2{
+  background-color: white;
+
+}
+
+h3{
+
+  margin-left: 60px;
+}

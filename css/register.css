@@ -1,0 +1,58 @@
+body { /* the body method */
+background: white;/* #C7C1C1 makes background grey */
+/*text-align: left; /* Alignes all text to the left */
+/* Padding and Margin are being reset below. This was done so that the browser padding and margin is reset to 0 to make it all equal.  */
+padding: 0;
+margin:0;
+font-family: "merriweather";
+font-size: 7pt;
+}
+
+#bar{
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  padding-bottom: 2px;
+  padding-left: 20px; /* adds the spacing on the left of the Flags H1. */
+  margin-top: -167px;
+  border-bottom: 1px solid black;
+  position: relative;
+  position: fixed;
+  -webkit-box-shadow: 10px 10px 25px 0px rgba(66,65,66,0.62);
+  -moz-box-shadow: 10px 10px 25px 0px rgba(66,65,66,0.62);
+  box-shadow: 10px 10px 25px 0px rgba(66,65,66,0.62);
+
+}
+
+.content{
+  background-color: white;
+  max-width: 960px; /* max width is 960 as specified in the specification */
+  min-width: 450px;  /*  min width is 450 as specified in the specification */
+  height: auto;  /* height is set automatic so that it gets the right size for the content to fit in.  */
+  margin: 25px auto; /* margin is used to centre content in the page. */
+  margin-top: 165px;
+  border: 2px solid white;
+  -webkit-box-shadow: 10px 10px 34px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 34px 5px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 34px 5px rgba(0,0,0,0.75);
+  border-radius: 35px;
+  padding-left: 85px;
+  padding-bottom: 35px;
+  padding-top: 35px;
+}
+.registration{
+  margin-left: 255px;
+  border: 1px solid black;
+  width: 280px;
+  padding-left: 100px;
+  border-radius: 5px;
+  background-color: #CCCCCC;
+
+}
+
+.title{
+ color: black;
+ margin-top: 206px;
+ margin-left: 350px;
+ margin-bottom: -100px;
+}

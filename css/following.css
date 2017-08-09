@@ -1,0 +1,382 @@
+
+
+body { /* the body method */
+background: white;/* #C7C1C1 makes background grey */
+/*text-align: left; /* Alignes all text to the left */
+/* Padding and Margin are being reset below. This was done so that the browser padding and margin is reset to 0 to make it all equal.  */
+padding: 0;
+margin:0;
+font-family: "merriweather";
+font-size: 14pt;
+
+}
+
+#bar{
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  padding-bottom: 2px;
+  padding-left: 20px; /* adds the spacing on the left of the Flags H1. */
+  margin-top: -165px;
+  border-bottom: 1px solid black;
+  position: relative;
+  position: fixed;
+  -webkit-box-shadow: 10px 10px 25px 0px rgba(66,65,66,0.62);
+  -moz-box-shadow: 10px 10px 25px 0px rgba(66,65,66,0.62);
+  box-shadow: 10px 10px 25px 0px rgba(66,65,66,0.62);
+
+}
+
+#nav{ /* This is used to give some style and positioning to the overall navigation bar */
+text-align: left; /*Align text to the left  */
+list-style:none;  /* Deletes the list-like look. */
+font-weight:bold; /*make text bold  */
+position: relative; /*positions the bar  */
+width:100%;  /*take full width  */
+/*Top and Right are used to place the navigation bar in a specific place  */
+top: 2px;
+right: -120px;
+z-index: 1; /*priorities over image  */
+}
+
+
+#nav li{ /* Sets up the list element */
+
+float:left; /* floats the list items to the left  */
+
+position:relative; /* positions the elements relative to each other.  */
+
+
+}
+
+#profile{
+  /*float: right;*/
+  /*margin-left: 10px;*/
+  /*color: black;*/
+  padding-left: 10px;
+  margin-top: 29px;
+  font-family: "Vladimir Script";
+  /*margin-left:-170px;*/
+}
+
+#profile ul{
+background:white; /* Background of ul */
+font-family: "Merriweather";
+font-size: 12pt;
+list-style: none;
+position: absolute;
+left: -9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+border: 1px solid black;
+border-radius: 5px;
+-webkit-box-shadow: 10px 10px 25px 0px rgba(66,65,66,0.27);
+-moz-box-shadow: 10px 10px 25px 0px rgba(66,65,66,0.27);
+box-shadow: 10px 10px 25px 0px rgba(66,65,66,0.27);
+
+}
+
+#profile ul li{
+   /* padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+  float: none;
+	right: 37px;
+	list-style: none;
+  border-bottom: 1px solid #cccccc;
+
+}
+#profile ul a{
+    white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+#profile:hover ul{ /* Displays the dropdown when you hover over the elements.*/
+    left:0; /* Bring back on-screen when needed */
+}
+
+#profile li:hover ul a{ /* There is a global style for links before they are hovered. This code will take those effect off.*/
+    text-decoration:none;
+}
+
+#logo{
+  float: left;
+  padding: 0px;
+}
+
+
+#placeholder{
+  margin-left: 30px;
+  margin-top: 29px;
+  margin-right: -25px;
+  width: 25px;
+  padding-right: 45px;
+  /*margin-left: 620px;*/
+}
+
+#placeholder:hover{
+  cursor: pointer;
+}
+
+#notification{
+  margin-left: 270px;
+  margin-top: 18px;
+}
+
+#noti{
+  height: 30px;
+  width: auto;
+
+}
+
+#profile a:hover{
+color: #0099FF; /* Text colour when hovered */
+
+}
+
+#profile a{
+color: black; /* Text colour when hovered */
+
+}
+
+
+#comment{
+  color: black;
+  height: auto;
+  width: 70%;
+  margin-left: 20px;
+
+}
+#feed{
+  margin-left: 100px;
+  margin-top: -10px;
+}
+h1{
+  margin-left: 150px;
+  margin-top: 25px;
+  font-family: "Vladimir Script";
+  text-shadow: 3px 3px 2px rgba(150, 150, 150, 1);
+}
+p{
+  font-family: "merriweather";
+  font-size: 12pt;
+margin: 10px;
+}
+
+.unfavourite{
+  color: blue;
+  border-radius: 5px;
+  border: none;
+  font-family:"merriweather";
+  font-weight: bold;
+  font-weight: bolder;
+}
+
+.favourite{
+  border-radius: 5px;
+  font-family: "merriweather";
+  border: none;
+}
+
+.favourite:hover{
+  cursor: pointer;
+  color: blue;
+}
+
+.unfavourite:hover{
+  cursor: pointer;
+}
+
+.commentbody{
+  border-radius: 6px;
+  margin-top: 5px;
+}
+
+.commentbtn{
+  border-radius: 6px;
+}
+.commentbtn:hover{
+  cursor: pointer;
+}
+
+.commentcount{
+  margin-left: 10px;
+}
+.count:hover{
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+  color: blue;
+
+}
+
+.move{
+  margin-left: 70px;
+}
+
+.bodypost{
+  /*display: none;*/
+  width: 85%;
+  border: 1px solid #888888;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-left: 55px;
+  border-bottom: none;
+
+}
+
+#commentbox{
+  width: auto;
+  margin-left: 10px;
+
+}
+
+#comment{
+  /*display: none;*/
+}
+
+
+input[type=text]{
+  width: 100%;
+}
+#content{
+  background-color: white;
+  max-width: 960px; /* max width is 960 as specified in the specification */
+  min-width: 450px;  /*  min width is 450 as specified in the specification */
+  height: auto;  /* height is set automatic so that it gets the right size for the content to fit in.  */
+  margin: 25px auto; /* margin is used to centre content in the page. */
+  margin-top: 165px;
+  border: 2px solid white;
+  -webkit-box-shadow: 10px 10px 34px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 34px 5px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 34px 5px rgba(0,0,0,0.75);
+  border-radius: 35px;
+}
+
+#shareplanlogo{
+  height: 30px;
+  width: 25px;
+  margin-top: -20px;
+  padding-right: 35px;
+
+
+}
+
+#logoimg{
+  height:57px;
+  width: auto;
+}
+
+#favouriteButton{
+  margin-left: 10px;
+}
+
+#textcomment{
+  margin-top: -25px;
+  margin-left: 48px;
+}
+
+
+#deletediv{
+  margin-left: 790px;
+  max-width: 30px;
+  max-height: 40px;
+}
+
+#profileimg{
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 80px;
+  width: 80px;
+}
+
+#profileinfo{
+  margin-left: 105px;
+  margin-right: -25px;
+}
+#disconnect{
+  background-color: blue;
+  color: white;
+  border: blue;
+}
+
+.connect{
+  margin-left: -90px;
+  margin-top: -20px;
+  border-radius: 5px;
+  font-style: "merriweather";
+  font-weight: bold;
+    border: white;
+
+}
+
+.connectbtn{
+  margin-top: -20px;
+}
+.connection{
+  margin-top: -13px;
+}
+.connection:hover{
+  cursor: pointer;
+}
+
+
+.del{
+  border-radius: 8px;
+  border: none;
+  /*display: none;*/
+}
+.del:hover{
+cursor: pointer;
+
+}
+
+h1{
+  margin-top:-65px;
+  margin-left: 120px;
+}
+
+h2{
+  background-color: white;
+  margin-left: 60px;
+}
+
+h3{
+
+  margin-left: 60px;
+}
+
+
+.follow{
+  font-size: 6pt;
+  color: gray;
+  margin-left: 123px;
+}
+
+.follow a:hover{
+  font-size: 6pt;
+  text-decoration: underline;
+}
+
+a{
+  text-decoration: none;
+}
+
+.users{
+  margin-top: -35px;
+  margin-left: 65px;
+}
+
+.followers{
+  margin-bottom: 25px;
+  margin-left: 85px;
+  margin-top: 20px;
+}
+hr{
+  margin-left: 85px;
+  margin-right: 85px;
+}
+
+.border{
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}

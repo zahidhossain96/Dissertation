@@ -1,0 +1,15 @@
+A lot of the functions were from the template provided by HowCode on github.com.
+
+The link is https://github.com/howCodeORG/Social-Network/tree/Part34
+
+Most of the classes are the same as the ones from https://github.com/howCodeORG/Social-Network/tree/Part34
+
+A lot of php scripts are similar to https://github.com/howCodeORG/Social-Network/tree/Part34 as they follow the template and the tutorials on YouTube: https://www.youtube.com/playlist?list=PLBOh8f9FoHHhRk0Fyus5MMeBsQ_qwlAzG
+
+PHPMailer-master was used for the purpose of sending mail. The source of this is: https://github.com/PHPMailer/PHPMailer/
+
+Database was developed using the template found on https://github.com/howCodeORG/Social-Network/tree/Part34
+
+The code was recoded to serve the purpose of social media site for the dissertation project.
+
+jquery-1.11.2.min.js script found in Scripts directory
